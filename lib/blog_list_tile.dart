@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class BlogListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final title = Provider.of<String>(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(height: 20),
         InkWell(
           child: Text(
-            'I was born',
+            title,
             style: TextStyle(color: Colors.blueAccent.shade700),
           ),
           onTap: () {},

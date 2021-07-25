@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 18),
               ConstrainedCenter(
                 child: SelectableText(
-                  'Flutter dev',
+                  'Naok!',
                   style: Theme.of(context).textTheme.headline1,
                 ),
               ),
